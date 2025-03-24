@@ -1,0 +1,27 @@
+[project]
+name = "drawio-db"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "udzhukhu_er" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+packages = { include = "drawio_db", from = "src" }
+
+dependencies = [
+    "lxml (>=5.3.1,<6.0.0)",
+    "lxml-stubs (>=0.5.1,<0.6.0)",
+    "devtools (>=0.12.2,<0.13.0)",
+    "colorlog (>=6.9.0,<7.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pyright]
+reportPrivateUsage = false
+
